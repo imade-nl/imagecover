@@ -139,7 +139,8 @@
 
 	function isActive(settings)
 	{
-		var windowWidth =  $(window).width();
+		// var windowWidth =  $(window).width();
+		var windowWidth = typeof innerWidth === 'undefined' ? document.body.clientWidth : innerWidth;
 
 		if(settings.windowMinWidth == false && settings.windowMaxWidth == false) return true;
 		if(settings.windowMinWidth == false && windowWidth <= settings.windowMaxWidth) return true;
