@@ -6,6 +6,12 @@ This jQuery plugin can be used to mimic the background-size:cover; for img eleme
 ##Example
 
 ```javascript
+<div class="js-imagecover"><img src="myawesomeimage.jpg" /></div>
+$('.js-imagecover').imageCover(); // stretches image to cover container
+```
+
+#Full options
+```javascript
 
 $('.js-imagecover').imageCover({
 	windowMinWidth: false,
